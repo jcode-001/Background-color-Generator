@@ -7,11 +7,16 @@
     <title>Linear Gradient Background Generator</title>
     <link rel="stylesheet" href="bg_generator.css">
 </head>
-<body id="gradient">
-    <h1>Background generator</h1>
-    <input type="color" name="color1" class="color1" value="#ff0088">
-    <input type="color" name="color2" class="color2" value="#00fbff">
-    <h3>linear-gradient(to right, #ff0088, #00fbff);</h3>
+<body>
+    <div class="wrapper">
+      <h1>Background generator</h1>
+      <div class="color-box">
+        <input type="color" name="color1" class="color1" value="#cba2a2">
+        <input type="color" name="color2" class="color2" value="#7cf4f4">
+      </div>
+      <h3>linear-gradient(to right, #ff0088, #00fbff);</h3>
+      <button id="random" onclick="generateRandomColor()">Random</button>
+    </div>
     <script src="bg_generator.js"></script>
 </body>
 </html>
